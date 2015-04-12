@@ -1,4 +1,49 @@
+.select-datepicker {
+    width: 115px;
+}
+
 .img-circle {
     float: left;
     margin: -1px 11px 0 0;
+    width: 50px;
+    height: 50px;
+}
+
+.edit-user {
+    background: transparent;
+    border: none;
+    float: right;
+    position: relative;
+    top: -70px;
+    left: 30px;
+    font-size: 39px;
+    outline: none;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(30deg);
+    color: #F4F4F4;
+}
+
+.edit-user:hover {
+    color: #D8D8D8;
+}
+
+.datepicker {
+    z-index: 9999;
+}
+
+#recipient-name {
+    width: 350px;
+}
+
+#avatar-container {
+    float: right;
+    width: 150px;
+    margin: 0 20px 0 0;
+    border-radius: 5px;
+}
+
+#avatar-container img{
+    width: 150px;
+    border-radius: 5px;
 }

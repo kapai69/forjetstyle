@@ -9,6 +9,7 @@
 
     <title>Тестовое задание</title>
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-datepicker.css" rel="stylesheet">
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -16,5 +17,9 @@
     <h2>Тестовое задание</h2>
     <?php echo $content; ?>
 </div>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/script.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-datepicker.js"></script>
 </body>
 </html>

@@ -11,6 +11,9 @@
  */
 class User extends CActiveRecord
 {
+
+    public $file;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -28,8 +31,9 @@ class User extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('username, photo, birthday', 'required'),
-			array('username', 'length', 'max'=>150),
-			array('photo', 'length', 'max'=>255),
+			array('username', 'length', 'max'=>150, ),
+			array('photo', 'length', 'max'=>150, 'allowEmpty' => true),
+            array('file', 'file', 'types'=>'jpg, gif, png', 'allowEmpty' => true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, username, photo, birthday', 'safe', 'on'=>'search'),
